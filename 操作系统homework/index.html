@@ -1,0 +1,34 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" href="style/style.css" />
+<script src="script/addLoadEvent.js"></script>
+<script src="script/queue.js"></script>
+<script src="script/processhandle.js"></script>
+<script src="script/process.js"></script>
+<script src="script/initialize.js"></script>
+<script src="script/nodehandle.js"></script>
+<script src="script/formHandle.js"></script>
+<title>Multilevel Feedback Queue Scheduling</title>
+</head>
+
+<body><form>
+<p>输入进程</p>
+<div id="processInputs">
+进程1:<input type="text" name="process1" value="24" /><br />
+进程2:<input type="text" name="process2" value="25" /><br />
+进程3:<input type="text" name="process3" value="26" /><br />
+进程4:<input type="text" name="process4" value="" /><br />
+</div>
+<input id = "start" type="button" value="开始" onClick="processhandle()"><br /><br />
+
+增加进程:<input id="addText" type="text" name="process5" value="30" /><br />
+<input  type="button" value="增加进程" onClick="addprocess()"><br /><br />
+时间片:<input id="slice" type="text" disabled="disabled" value="8" /><br />
+<input id="sliceAlter" type="button" value="修改时间片" onclick="alterSlice()" />
+</form>
+<div id="processArea">
+</div>
+</body>
+</html>

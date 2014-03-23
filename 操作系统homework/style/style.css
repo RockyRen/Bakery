@@ -1,0 +1,22 @@
+@charset "utf-8";
+/* CSS Document */
+/*---------------------process--------------*/
+.process{
+  padding: 25px 25px 25px 25px;
+  border: thin solid black;
+  margin-right:10px;
+  line-height: 1.5em;
+  	
+}
+
+
+.queue .process{
+	/*float:left;*/
+	
+}
+
+
+.queue{
+	display:block;	
+	
+}
